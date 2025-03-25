@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+<style>
+
+.container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+
+}
+
+    .product-card{
+        height: auto;
+        width: 300px;
+        border: 1px solid rgb(22, 22, 22);
+        box-shadow: 1 0 12px grey;
+        border-radius: 10px;
+        margin: 10px 20px;
+    }
+
+    .product-image{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px 10px 0 0;
+        height: 200px;
+        object-fit: cover;
+    }
+    .product-title{
+        text-align: center;
+
+    }
+    .product-info{
+        text-align: justify;
+        padding: 0 10px;
+    }
+
+    .btn{
+        display: block;
+        margin: 0 auto;
+        font-size: 15px;
+        border-radius: 30px rgb(3, 56, 3);
+        padding: 5px 10px;
+        margin: 5px 5 px;
+        border: double;
+        background-color: aquamarine;
+
+    }
+    .navbar{
+        background-color: rgba(8, 8, 8, 0.979);
+        color: rgb(238, 230, 230);
+        text-align: center;   
+        font-size: 20px;  
+        width: auto;
+        height: auto;
+        position: sticky;  
+        top: 0; 
+        
+        display: flex;
+    }
+   .heading{
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+   }
+
+    .search{
+        margin-left: 700px;
+    }
+    .menu{
+        margin-left: 100px;
+    }
+    
+    .brand-logo{
+    height: 20px;
+    .brand{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    }
+    .menu-item{
+   color: aliceblue;
+   margin: 0 10px;
+   font-size: 20px;
+   
+    }
+   .menu-icon{
+    height: 50px;
+    display: none;
+   }
+
+
+
+
+     /* Mobile */
+     @media   (min-width: 400px) and (max-width: 700px){
+        .product-title{
+            text-align: left;
+            padding-left: 10px;
+            font-size: 20px;
+            margin: 10px 15px;
+
+        }
+        .product-card{
+            height: auto;
+            width: auto;
+        }
+        .container{
+            background-color: yellowgreen;
+        }
+        .menu{
+        display: none;
+    }
+    .menu-icon{
+    height: 100px;
+    display: inline;
+    margin-right: 10px;
+   }
+
+        }
+    
+    /* Tablet */
+  @media (min-width: 701px) and (max-width: 800px) {
+    
+    .container{
+        background-color: goldenrod;
+    }
+    .search{
+            display: none;
+        }
+  }
+
+    /* Laptop */
+    @media (min-width: 801px) and (max-width:1300px){
+        .container{
+            background-color: bisque;
+        }
+        .search{
+            display: none;
+        }
+        .menu{
+        margin-left: 300px;
+    }
+       
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="brand">
+            <img src="india.png" class="brand-logo" alt="festival-image">
+            <h5>Indian Festivals</h5>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search"/>
+        </div>
+        <div class="menu">
+            <a href="#" class="menu-item">Home</a>
+            <a href="#"class="menu-item">About</a>
+            <a href="#"class="menu-item">Contact</a>
+        </div>
+        <img src="menu.png" class="menu-icon" alt="menu-icon"/>
+
+    </div>
+
+    <h1 class="heading">Indian Festivals</h1>
+<div class="container">
+    <div class="product-card">
+        <img src="diwali.jpg" class="product-image" alt="diwali">
+        <h1 class="product-title">Diwali</h1>
+        <p class="product-info">Diwali, also called Deepavali or Deepawali, is the Hindu festival of lights, with variations celebrated in other Indian religions such as Jainism and Sikhism.</p>
+        <button class="btn"> Know More</button>
+        </div>
+
+            <div class="product-card">
+                <img src="sankrant.jpg" class="product-image" alt="Sankrant">
+                <h1 class="product-title">Makar Sankrant</h1>
+                <p class="product-info">Makar Sankrānti, also referred to as Uttarāyana, Makara, or simply Sankrānti, is a Hindu observance and a mid-winter harvest festival in India and Nepal. It is typically celebrated on 14 January annually, this occasion marks the transition of the sun from the zodiac of Sagittarius to Capricorn.
+                </p>
+                <button class="btn"> Know More</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="naavratri.png" class="product-image" alt="navratri">
+                    <h1 class="product-title">Navratri</h1>
+                    <p class="product-info">Navaratri is an annual Hindu festival observed in honor of the goddess Durga, an aspect of Adi Parashakti, the supreme goddess. It spans over nine nights, first in the month of Chaitra, and again in the month of Ashvin.</p>
+                    <button class="btn"> Know More</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="pola.jpg" class="product-image" alt="pola">
+                        <h1 class="product-title">Pola</h1>
+                        <p class="product-info">Pola is a thanksgiving festival celebrated by farmers in Maharashtra and Chhattisgarh, to acknowledge the importance of bulls and oxen, who are a crucial part of agriculture and farming activities. It falls on the day of the Pithori Amavasya in the month of Shraavana.
+ 
+                        </p>
+                        <button class="btn"> Know More</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="gudipadva.png" class="product-image" alt="gudi-padwa">
+                            <h1 class="product-title">Gudi Padwa</h1>
+                            <p class="product-info">Gudi Padwa, a major festival in Maharashtra, is celebrated as the Marathi New Year, marking the beginning of the spring season and the harvest season, and is linked to the day Lord Brahma created the universe and the beginning of the Shalivahan calendar. 
+                            </p>
+                            <button class="btn"> Know More</button>
+                            </div>
+
+                            <div class="product-card">
+                                <img src="ganesha.jpg" class="product-image" alt="ganesh-chaturthi">
+                                <h1 class="product-title">Ganesh Chaturthi</h1>
+                                <p class="product-info">Ganesh Chaturthi, also known as Vinayaka Chaturthi or Vinayaka Chavithi or Vinayagar Chaturthi, is a Hindu festival celebrating the birthday of Hindu deity Ganesh.</p>
+                                <button class="btn"> Know More</button>
+                                </div>
+      
+     </div>
+    
+</body>
+</html>
